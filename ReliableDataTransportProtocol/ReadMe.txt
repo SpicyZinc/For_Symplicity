@@ -1,7 +1,13 @@
 /**
-CSC457 Assignment 03 
 Author: Liang Xin
-In order to test, codes must run under simulation code rdt_sim.cpp, which is provided by the professor.
+Task:
+	Implemented the sending and receiving side of a reliable data transport (RDT) protocol. 
+	It achieves error-free, loss-free, and in-order data delivery on top of a link medium 
+	that can lose, reorder, and corrupt packets. 
+	The implementation follows sliding window protocol(Go-Back-N protocol). 
+	Since there are not machines with OS that can be modified, the implementation runs in a simulated environment.
+	In order to test, codes must run under simulation code rdt_sim.cpp, which is provided by the professor.
+	
 */
 ===============================================================================
 Files submitted:
