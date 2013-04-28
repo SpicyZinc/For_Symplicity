@@ -1,0 +1,44 @@
+body{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: "Verdana", "Tahoma", sans-serif;
+   	background-repeat: repeat; 
+    background-attachment: fixed;
+	background-image: url('abstract_gray.jpg');
+	/*
+	background-image: url('http://www.wallcoo.net/cartoon/abstract_colors_da03/images/abstract_colors_eola_gray.jpg');
+	*/
+}
+
+p{
+	font-family: "Arial", sans-serif;
+	font-size: 16pt;
+	
+}
+
+
+h2{
+	color: purple;
+	font-size: 22pt; 
+   	font-weight: bold; 
+   	font-family: "Tahoma", "Verdana", sans-serif;
+   	text-align: center;
+}
+
+img{
+	margin: 2px;
+	border: 1px solid #0000ff;
+	height: 35px;
+	width: 35px;
+	float: left;
+}
+
+.contents
+{
+	font-family: "Arial", sans-serif;
+	font-size: 12pt;
+	text-align: left;
+	margin-left: 6px;
+	padding-left: 1em;
+}

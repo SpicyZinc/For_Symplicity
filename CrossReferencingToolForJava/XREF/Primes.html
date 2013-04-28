@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<title>JXREF</title>
+<link href="jxref.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<h2>Cross-Referencing Tool Jxref in Perl</h2>
+<img src = "http://www.futek.com/images/email/02_08/CrossReference.jpg" alt = "cross reference">
+<br />
+<br />
+<p class = "contents">1      <b>import</b>&nbsp;java.util.List;</p>
+<p class = "contents">2      <b>import</b>&nbsp;java.util.ArrayList;</p>
+<p class = "contents">3      </p>
+<p class = "contents">4      </p>
+<p class = "contents">5      <b>class</b>&nbsp;Primes{</p>
+<p class = "contents">6      &nbsp;<b>public</b>&nbsp;<b>static</b>&nbsp;<b>void</b>&nbsp;main(String[]&nbsp;args){</p>
+<p class = "contents">7      &nbsp;&nbsp;System.out.<a href = "http://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println">println</a>("All primes less and equal to 17: ");</p>
+<p class = "contents">8      &nbsp;&nbsp;List&nbsp;result&nbsp;=&nbsp;<a href = "#allPrimes">allPrimes</a>(17);</p>
+<p class = "contents">9      &nbsp;&nbsp;System.out.<a href = "http://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println">println</a>(result.<a href = "http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#toString">toString</a>());</p>
+<p class = "contents">10      &nbsp;}</p>
+<p class = "contents">11      &nbsp;</p>
+<p class = "contents">12      &nbsp;<b>public</b>&nbsp;<b>static</b>&nbsp;List&nbsp;<a name = "allPrimes"></a><a href = "Primes.html#allPrimes">allPrimes</a>(<b>int</b>&nbsp;target){</p>
+<p class = "contents">13      &nbsp;&nbsp;List<Integer>&nbsp;primes&nbsp;=&nbsp;<b>new</b>&nbsp;ArrayList<Integer>();</p>
+<p class = "contents">14      &nbsp;&nbsp;<b>for</b>(<b>int</b>&nbsp;i=2;&nbsp;i<=target;&nbsp;i++){</p>
+<p class = "contents">15      &nbsp;&nbsp;&nbsp;<b>if</b>(<a href = "#isPrime">isPrime</a>(i)){</p>
+<p class = "contents">16      &nbsp;&nbsp;&nbsp;&nbsp;primes.<a href = "http://docs.oracle.com/javase/7/docs/api/java/util/List.html#add">add</a>(<b>new</b>&nbsp;Integer(i));</p>
+<p class = "contents">17      &nbsp;&nbsp;&nbsp;}</p>
+<p class = "contents">18      &nbsp;&nbsp;}</p>
+<p class = "contents">19      &nbsp;&nbsp;<b>return</b>&nbsp;primes;</p>
+<p class = "contents">20      &nbsp;}</p>
+<p class = "contents">21      &nbsp;</p>
+<p class = "contents">22      &nbsp;<b>private</b>&nbsp;<b>static</b>&nbsp;<b>boolean</b>&nbsp;<a name = "isPrime"></a><a href = "Primes.html#isPrime">isPrime</a>(<b>int</b>&nbsp;num){</p>
+<p class = "contents">23      &nbsp;&nbsp;<b>boolean</b>&nbsp;status&nbsp;=&nbsp;false;</p>
+<p class = "contents">24      &nbsp;&nbsp;<b>if</b>(num&nbsp;==&nbsp;2)</p>
+<p class = "contents">25      &nbsp;&nbsp;&nbsp;<b>return</b>&nbsp;true;</p>
+<p class = "contents">26      &nbsp;&nbsp;<b>for</b>(<b>int</b>&nbsp;j&nbsp;=&nbsp;2;&nbsp;j&nbsp;<=&nbsp;Math.<a href = "http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#sqrt">sqrt</a>(num);&nbsp;j++){</p>
+<p class = "contents">27      &nbsp;&nbsp;&nbsp;<b>if</b>&nbsp;(num&nbsp;%&nbsp;j&nbsp;==&nbsp;0){</p>
+<p class = "contents">28      &nbsp;&nbsp;&nbsp;&nbsp;status&nbsp;=&nbsp;false;</p>
+<p class = "contents">29      &nbsp;&nbsp;&nbsp;&nbsp;<b>break</b>;</p>
+<p class = "contents">30      &nbsp;&nbsp;&nbsp;}</p>
+<p class = "contents">31      &nbsp;&nbsp;&nbsp;<b>else</b>&nbsp;</p>
+<p class = "contents">32      &nbsp;&nbsp;&nbsp;&nbsp;<b>return</b>&nbsp;true;</p>
+<p class = "contents">33      &nbsp;&nbsp;}</p>
+<p class = "contents">34      &nbsp;&nbsp;<b>return</b>&nbsp;status;</p>
+<p class = "contents">35      &nbsp;}</p>
+<p class = "contents">36      }</p>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<text><text/></body>
+</html>

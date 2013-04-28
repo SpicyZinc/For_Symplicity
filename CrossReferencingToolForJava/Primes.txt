@@ -1,0 +1,200 @@
+Classfile /C:/Users/Axin/Desktop/CS/UR CS Courses/Fall_2012/454ProgrammingLanguageDesign&Implementation/A/A4/454_Assign04_LiangXin/Primes.class
+  Last modified Nov 8, 2012; size 1020 bytes
+  MD5 checksum a1be43bda66f797ca8fcd2aa323458c0
+  Compiled from "Primes.java"
+class Primes
+  SourceFile: "Primes.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #15.#30        //  java/lang/Object."<init>":()V
+   #2 = Fieldref           #31.#32        //  java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #33            //  All primes less and equal to 17: 
+   #4 = Methodref          #34.#35        //  java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Methodref          #14.#36        //  Primes.allPrimes:(I)Ljava/util/List;
+   #6 = Methodref          #15.#37        //  java/lang/Object.toString:()Ljava/lang/String;
+   #7 = Class              #38            //  java/util/ArrayList
+   #8 = Methodref          #7.#30         //  java/util/ArrayList."<init>":()V
+   #9 = Methodref          #14.#39        //  Primes.isPrime:(I)Z
+  #10 = Class              #40            //  java/lang/Integer
+  #11 = Methodref          #10.#41        //  java/lang/Integer."<init>":(I)V
+  #12 = InterfaceMethodref #42.#43        //  java/util/List.add:(Ljava/lang/Object;)Z
+  #13 = Methodref          #44.#45        //  java/lang/Math.sqrt:(D)D
+  #14 = Class              #46            //  Primes
+  #15 = Class              #47            //  java/lang/Object
+  #16 = Utf8               <init>
+  #17 = Utf8               ()V
+  #18 = Utf8               Code
+  #19 = Utf8               LineNumberTable
+  #20 = Utf8               main
+  #21 = Utf8               ([Ljava/lang/String;)V
+  #22 = Utf8               allPrimes
+  #23 = Utf8               (I)Ljava/util/List;
+  #24 = Utf8               StackMapTable
+  #25 = Class              #48            //  java/util/List
+  #26 = Utf8               isPrime
+  #27 = Utf8               (I)Z
+  #28 = Utf8               SourceFile
+  #29 = Utf8               Primes.java
+  #30 = NameAndType        #16:#17        //  "<init>":()V
+  #31 = Class              #49            //  java/lang/System
+  #32 = NameAndType        #50:#51        //  out:Ljava/io/PrintStream;
+  #33 = Utf8               All primes less and equal to 17: 
+  #34 = Class              #52            //  java/io/PrintStream
+  #35 = NameAndType        #53:#54        //  println:(Ljava/lang/String;)V
+  #36 = NameAndType        #22:#23        //  allPrimes:(I)Ljava/util/List;
+  #37 = NameAndType        #55:#56        //  toString:()Ljava/lang/String;
+  #38 = Utf8               java/util/ArrayList
+  #39 = NameAndType        #26:#27        //  isPrime:(I)Z
+  #40 = Utf8               java/lang/Integer
+  #41 = NameAndType        #16:#57        //  "<init>":(I)V
+  #42 = Class              #48            //  java/util/List
+  #43 = NameAndType        #58:#59        //  add:(Ljava/lang/Object;)Z
+  #44 = Class              #60            //  java/lang/Math
+  #45 = NameAndType        #61:#62        //  sqrt:(D)D
+  #46 = Utf8               Primes
+  #47 = Utf8               java/lang/Object
+  #48 = Utf8               java/util/List
+  #49 = Utf8               java/lang/System
+  #50 = Utf8               out
+  #51 = Utf8               Ljava/io/PrintStream;
+  #52 = Utf8               java/io/PrintStream
+  #53 = Utf8               println
+  #54 = Utf8               (Ljava/lang/String;)V
+  #55 = Utf8               toString
+  #56 = Utf8               ()Ljava/lang/String;
+  #57 = Utf8               (I)V
+  #58 = Utf8               add
+  #59 = Utf8               (Ljava/lang/Object;)Z
+  #60 = Utf8               java/lang/Math
+  #61 = Utf8               sqrt
+  #62 = Utf8               (D)D
+{
+  Primes();
+    flags: 
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return        
+      LineNumberTable:
+        line 5: 0
+
+  public static void main(java.lang.String[]);
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String All primes less and equal to 17: 
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: bipush        17
+        10: invokestatic  #5                  // Method allPrimes:(I)Ljava/util/List;
+        13: astore_1      
+        14: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        17: aload_1       
+        18: invokevirtual #6                  // Method java/lang/Object.toString:()Ljava/lang/String;
+        21: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        24: return        
+      LineNumberTable:
+        line 7: 0
+        line 8: 8
+        line 9: 14
+        line 10: 24
+
+  public static java.util.List allPrimes(int);
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: new           #7                  // class java/util/ArrayList
+         3: dup           
+         4: invokespecial #8                  // Method java/util/ArrayList."<init>":()V
+         7: astore_1      
+         8: iconst_2      
+         9: istore_2      
+        10: iload_2       
+        11: iload_0       
+        12: if_icmpgt     43
+        15: iload_2       
+        16: invokestatic  #9                  // Method isPrime:(I)Z
+        19: ifeq          37
+        22: aload_1       
+        23: new           #10                 // class java/lang/Integer
+        26: dup           
+        27: iload_2       
+        28: invokespecial #11                 // Method java/lang/Integer."<init>":(I)V
+        31: invokeinterface #12,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        36: pop           
+        37: iinc          2, 1
+        40: goto          10
+        43: aload_1       
+        44: areturn       
+      LineNumberTable:
+        line 13: 0
+        line 14: 8
+        line 15: 15
+        line 16: 22
+        line 14: 37
+        line 19: 43
+      StackMapTable: number_of_entries = 3
+           frame_type = 253 /* append */
+             offset_delta = 10
+        locals = [ class java/util/List, int ]
+           frame_type = 26 /* same */
+           frame_type = 250 /* chop */
+          offset_delta = 5
+
+
+  private static boolean isPrime(int);
+    flags: ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: iconst_0      
+         1: istore_1      
+         2: iload_0       
+         3: iconst_2      
+         4: if_icmpne     9
+         7: iconst_1      
+         8: ireturn       
+         9: iconst_2      
+        10: istore_2      
+        11: iload_2       
+        12: i2d           
+        13: iload_0       
+        14: i2d           
+        15: invokestatic  #13                 // Method java/lang/Math.sqrt:(D)D
+        18: dcmpg         
+        19: ifgt          35
+        22: iload_0       
+        23: iload_2       
+        24: irem          
+        25: ifne          33
+        28: iconst_0      
+        29: istore_1      
+        30: goto          35
+        33: iconst_1      
+        34: ireturn       
+        35: iload_1       
+        36: ireturn       
+      LineNumberTable:
+        line 23: 0
+        line 24: 2
+        line 25: 7
+        line 26: 9
+        line 27: 22
+        line 28: 28
+        line 29: 30
+        line 32: 33
+        line 34: 35
+      StackMapTable: number_of_entries = 4
+           frame_type = 252 /* append */
+             offset_delta = 9
+        locals = [ int ]
+           frame_type = 252 /* append */
+             offset_delta = 1
+        locals = [ int ]
+           frame_type = 21 /* same */
+           frame_type = 250 /* chop */
+          offset_delta = 1
+
+}
