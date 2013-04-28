@@ -17,20 +17,20 @@ class Stopwatch {
     } 
 }
 
-public class TwoSumViaHash{
+public class TwoSumViaHash {
 
-	public static int twoSumViaHash(int[] a){
+	public static int twoSumViaHash(int[] a) {
 		Hashtable<Integer, Integer> aHashtable = new Hashtable<Integer, Integer>();
-		for (int i = 0; i < a.length; i++){
+		for (int i = 0; i < a.length; i++) {
 			aHashtable.put(a[i], new Integer(i)); 
 		}
 		
 		int count = 0;
-		for (int i = 0; i < a.length; i++){
+		for (int i = 0; i < a.length; i++) {
 			if(aHashtable.get(0-a[i]) == null) continue;
-			else{
+			else {
 				int j = aHashtable.get(0-a[i]);
-				if(j < i){ ///to confine j<i is the key point OR   j > i is OK
+				if (j < i) { // to confine j<i is the key point OR   j > i is OK
 					System.out.println(a[i] + " " + a[j]);
 					count++;
 				}
@@ -39,7 +39,7 @@ public class TwoSumViaHash{
 		return count;
 	}		
 
-    public static void main(String[] args) throws IOException { 
+    	public static void main(String[] args) throws IOException { 
 	
 		int[] a = new int[8000];
 		int count = 0;
@@ -48,16 +48,16 @@ public class TwoSumViaHash{
 		BufferedReader integerFile = new BufferedReader(in);
 		String aLine;
 		
-		while((aLine = integerFile.readLine()) != null){						
+		while ((aLine = integerFile.readLine()) != null) {						
 			//System.out.println(aLine);
 			int aNumber = Integer.parseInt(aLine);
 			a[count] = aNumber;
 			count++;
 		}
 		
-        Stopwatch timer = new Stopwatch();
-        int cnt = twoSumViaHash(a);
-        System.out.printf("Elapsed Time = %f s\n", timer.elapsedTime());
-        System.out.println(cnt);
+	        Stopwatch timer = new Stopwatch();
+	        int cnt = twoSumViaHash(a);
+	        System.out.printf("Elapsed Time = %f s\n", timer.elapsedTime());
+	        System.out.println(cnt);
 	} 
 }
