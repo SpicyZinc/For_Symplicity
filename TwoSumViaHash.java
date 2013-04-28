@@ -27,10 +27,11 @@ public class TwoSumViaHash {
 		
 		int count = 0;
 		for (int i = 0; i < a.length; i++) {
-			if(aHashtable.get(0-a[i]) == null) continue;
+			if (aHashtable.get(0-a[i]) == null) 
+				continue;
 			else {
-				int j = aHashtable.get(0-a[i]);
-				if (j < i) { // to confine j<i is the key point OR   j > i is OK
+				int j = aHashtable.get(0 - a[i]);
+				if (j < i) { // to confine j<i is the key point OR j > i is OK
 					System.out.println(a[i] + " " + a[j]);
 					count++;
 				}
@@ -49,7 +50,7 @@ public class TwoSumViaHash {
 		String aLine;
 		
 		while ((aLine = integerFile.readLine()) != null) {						
-			//System.out.println(aLine);
+			// System.out.println(aLine);
 			int aNumber = Integer.parseInt(aLine);
 			a[count] = aNumber;
 			count++;
