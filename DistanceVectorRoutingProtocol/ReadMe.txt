@@ -1,8 +1,14 @@
 /**
+Author: Liang Xin
 
-CSC 457 Assignment02
-Liang Xin
-
+Task:
+	Implement the distance vector routing protocol. 
+	DVRouting.java can run at all hosts in the specified network. 
+	At each host, the input to the program is the set of directly attached links and their costs. 	 
+	The routing program at each host reports the cost 
+	and the next hop for the shortest paths to all other hosts in the network. 
+	
+	Note: the program at each host doesn't know the complete network topology. 
 */
 ==========
 
